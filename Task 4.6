@@ -1,0 +1,35 @@
+
+class Calculator {
+    private int a;
+    private int b;
+
+    public Calculator(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public String addition() {
+        return "Addition result: " + (a + b);
+    }
+
+    public String substraction() {
+        return "Substriction result: " + (a - b);
+    }
+
+    @Override
+    public String toString() {
+        return "First number ist " + a +", second number is: " + b;
+    }
+}
+
+public class CalculatorApplication {
+
+    public static void main(String[] args) {
+
+        Calculator calculator = new Calculator(100, 76);
+
+        System.out.println(calculator.addition());
+        System.out.println(calculator.substraction());
+
+    }
+}
